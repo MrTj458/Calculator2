@@ -31,23 +31,32 @@ public class Calculator
 			if (operator.equals("+"))
 			{
 				System.out.println("The answer is " + (number1 + number2));
+				nextLine();
 			}
 			else if (operator.equals("-"))
 			{
 				System.out.println("The answer is " + (number1 - number2));
+				nextLine();
 			}
 			else if (operator.equals("*"))
 			{
 				System.out.println("The answer is " + (number1 * number2));
+				nextLine();
 			}
 			else if (operator.equals("/"))
 			{
 				System.out.println("The answer is " + (number1 / number2));
+				nextLine();
 			}
 			else
 			{
 				System.out.println("Invalid operation, please try again.");
+				nextLine();
 			}
 		}
+	}
+	private void nextLine()
+	{
+		System.out.println("");
 	}
 }
